@@ -1,0 +1,10 @@
+. ros master เป็น server สำนหรับให้ node นลายๆตัวเชื่อมต่อกัน และส่ง msg sากันได้
+・ ros topics เป็นเหมือนหัวเรื่องที่เราคุยกัน โดย publisher node จะ publish msg ไปที่ topic แลัว sub node
+จะมารอรับ msg ที่ส่งมาจาก topicในชื่อ เดียวกัน
+・ ros sorvice เป็น synchro กัน โดยมี service client กับ service server โดย service client จะ ส่งไปหา node server
+แล้ว SerVer ถึจะส่งคำตอบกลับไป node dlient เป็นการทำงานร่ามกัน
+ㆍ ครามแตกต่างของ Topic & Message คือ msg เป็นข้อความที่แต่ละ nodeใช้คุยกัน เช่นตัวแปร หรือ structure
+ในขณะที่ topic คือ หัวเรื่องหรือช่องทาง สำหรับให้ msg ที่ต้อการแลัวส่งไปยัง node ต่างๆ โดยจะรู้ชื่อของ topic เพื่อ
+เข้าถึง msg ข้างในว่าคืออะไรบ้าง
+ㆍ ความ แตกต่างของ ROS Topics & ROS Services คือ ros service จะส่ง msg แบ ไม่เน้นความต่อเนื่อง มี request มี resposne
+ขณะ ที่อีกอันจะ เป็นการส่ง แบบ stream ต่อเนื่อง ส่งแบบตลอดโดยที่ไม่ได้คำนึงว่าข้อมูนั้นคนรับจเอาไปใช้ทำอะไรมั้ย?
