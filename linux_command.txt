@@ -1,0 +1,10 @@
+$ mkdir test
+$ cat > ROBOT_CLASS.txt
+$ cd test/
+$ git init
+$ git add . (or git add ROBOT_CLASS.txt)
+$ git commit -m "Adding File"
+$ git remote add origin https://github.com/robot-class/final.git
+$ git push origin robot-dev
+$ git pull origin robot-dev
+
