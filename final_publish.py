@@ -13,7 +13,7 @@ def publisher():
 	pub = rospy.Publisher('/std_id',
 						String, queue_size=10)
 
-	rospy.init_node('std_Int64', anonymous=True)
+	rospy.init_node('std_msgs/Int64', anonymous=True)
 	
 	
 	rate = rospy.Rate(10)
